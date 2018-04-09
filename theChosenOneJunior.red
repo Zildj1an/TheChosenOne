@@ -5,13 +5,6 @@
 ;strategy kill_the_opponent
 ;date 2018-Apr-06
 ;version 1
-;redcode-94b
-;assert 1
-;name TheChosenOneJunior
-;author OL1MPU5
-;strategy kill_the_opponent
-;date 2018-Apr-06
-;version 1
 	
 	
 	ADD #50, 17	;1
