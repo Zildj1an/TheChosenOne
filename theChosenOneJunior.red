@@ -24,7 +24,7 @@
  	  DAT #0, #5	;15 BOMBA 
  	  JMN -5, 2   	;16
  	CMP.A 1,1	;17 inutil
- 	DAT #0,#0 	;18 inutil
+ 	DAT #0,#0 	;18 
  	CMP.A 1,1       ;19
  	DAT #0,#0   	;20 BOMBA	
  	  JMZ 12, 8	;21	
