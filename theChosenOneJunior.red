@@ -8,8 +8,8 @@
 	
 	
 	ADD #50, 17	;1
-	NOP		;2
-	NOP		;3
+	CMP.A 3,3	;2 inutil
+	DAT #0,#0	;3 inutil
 	CMP.A 1,1	;4
 	DAT #0,#0	;5 BOMBA
 	ADD #31, 23	;6
@@ -23,8 +23,8 @@
 	  CMP.A 1,1 	;14
  	  DAT #0, #5	;15 BOMBA 
  	  JMN -5, 2   	;16
- 	NOP	        ;17
- 	NOP 		;18
+ 	CMP.A 1,1	;17 inutil
+ 	DAT #0,#0 	;18 inutil
  	CMP.A 1,1       ;19
  	DAT #0,#0   	;20 BOMBA	
  	  JMZ 12, 8	;21	
