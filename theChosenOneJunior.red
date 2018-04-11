@@ -10,7 +10,7 @@
 	ADD #80, 17	;1
 	SPL bombitas	;2 
 	ADD #31, 26	;3 
-	CMP 1,46	;4
+	CMP.A 1,6	;4
 	SPL tocahuevos	;5 BOMBA
 	MOV.I 30, 25	;6
 	SUB #31,25	;7
@@ -59,9 +59,14 @@ tocahuevos CMP.A 1,1 	  ;45
 	   jmp 1	  ;46
 	   jmp -1	  ;47   
 	   SPL tocahuevos ;48
+
 	  
 	  
+	  		
+	  			
  		 		
+ 		
+
  		
 
  		 		
