@@ -7,11 +7,11 @@
 ;version 1
 	
 	
-	ADD #50, 17	;1
+	ADD #80, 17	;1
 	SPL bombitas	;2 
 	ADD #31, 26	;3 
-	CMP.A 1,1	;4
-	DAT #0,#0	;5 BOMBA
+	CMP 1,46	;4
+	SPL tocahuevos	;5 BOMBA
 	MOV.I 30, 25	;6
 	SUB #31,25	;7
 	  ADD #5,7	;8
@@ -53,6 +53,13 @@
  	  JMN -5,2 	;42 
 	  DAT #0,#3962	;43 
 	  DAT #0,#50	;44
+	  
+  
+tocahuevos CMP.A 1,1 	  ;45
+	   jmp 1	  ;46
+	   jmp -1	  ;47   
+	   SPL tocahuevos ;48
+	  
 	  
  		 		
  		
