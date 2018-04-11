@@ -8,22 +8,22 @@
 	
 	
 	ADD #50, 17	;1
-	CMP.A 3,3	;2 inutil
-	DAT #0,#0	;3 inutil
+	SPL bombitas	;2 
+	ADD #31, 26	;3 
 	CMP.A 1,1	;4
 	DAT #0,#0	;5 BOMBA
-	ADD #31, 23	;6
-	MOV.I 29, 24	;7
-	SUB #31,24	;8
-	CMP.A 1,1 	;9
- 	DAT #0, #5	;10 BOMBA 
-	  ADD #5,4    	;11
- 	  MOV 3, @3   	;12
- 	  SUB #1,5    	;13
+	MOV.I 30, 25	;6
+	SUB #31,25	;7
+	  ADD #5,7	;8
+	  CMP.A 1,1 	;9
+ 	  DAT #0, #5	;10 BOMBA 
+	  MOV 4, @4    	;11
+ 	  SUB #1,6   	;12
+ 	  JMN -5, 5    	;13
 	  CMP.A 1,1 	;14
  	  DAT #0, #5	;15 BOMBA 
- 	  JMN -5, 2   	;16
- 	CMP.A 1,1	;17 inutil
+ 	ADD #50, 28   	;16
+ 	CMP.A 1,1	;17 
  	DAT #0,#0 	;18 
  	CMP.A 1,1       ;19
  	DAT #0,#0   	;20 BOMBA	
@@ -38,9 +38,9 @@
  	DAT #0,	#13	;29 
  	DAT #0,#0	;30 BOMBA 
  	DAT #0,@-30	;31 
- 	DAT #0,#501 	;32 
+ 	DAT #0,#500 	;32 
  	SPL bombitas	;33 
- 	JMP 468		;34
+ 	JMP 467		;34
  
  	
  	  DAT #0,#0	;35 BOMBA
@@ -51,8 +51,9 @@
   	  DAT #0,#0	;40 BOMBA
   	  SUB #1, 3	;41
  	  JMN -5,2 	;42 
-	  DAT #0,#3963	;43 
-	  DAT #0,#100	;44	
+	  DAT #0,#3962	;43 
+	  DAT #0,#50	;44
+	  
  		 		
  		
 
